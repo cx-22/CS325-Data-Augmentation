@@ -1,23 +1,23 @@
 # 325 Students instructions:
-git clone https://github.com/cx-22/CS325-Data-Augmentation.git
-python -m venv CS325-Data-Augmentation
-CS325-Data-Augmentation\Scripts\activate
-cd CS325-Data-Augmentation
+* git clone https://github.com/cx-22/CS325-Data-Augmentation.git
+* python -m venv CS325-Data-Augmentation
+* CS325-Data-Augmentation\Scripts\activate
+* cd CS325-Data-Augmentation
 
-pip install -r .\requirements.txt
-pip install -U albumentationsx
+* pip install -r .\requirements.txt
+* pip install -U albumentationsx
 
-Download dataset from:
-https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset/data
+* Download dataset from:
+* https://www.kaggle.com/datasets/antoreepjana/animals-detection-images-dataset/data
 
-unzip
-python cutclasses.py
-python format.py
-python augment.py
+* unzip dataset
+* python cutclasses.py
+* python format.py
+* python augment.py
 
-Get model from below
+* Get model from below
 
-python train.py --weights yolov7.pt --data "data/custom.yaml" --workers 4 --batch-size 4 --img 640 --cfg cfg/training/yolov7.yaml --name TrainName --hyp data/hyp.scratch.p5.yaml --epochs 100
+* python train.py --weights yolov7.pt --data "data/custom.yaml" --workers 4 --batch-size 4 --img 640 --cfg cfg/training/yolov7.yaml --name TrainName --hyp data/hyp.scratch.p5.yaml --epochs 100
 
 
 # Official YOLOv7
