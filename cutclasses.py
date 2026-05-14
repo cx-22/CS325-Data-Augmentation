@@ -38,5 +38,3 @@ def clean_split(split):
 
 clean_split("train")
 clean_split("test")
-
-print("Done.")

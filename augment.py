@@ -3,10 +3,10 @@ import cv2
 import albumentations as A
 from pathlib import Path
 AUGMENTATIONS = [
-    A.RandomResizedCrop(size=(640, 640), scale=(0.5, 1.0), p=0.7),
-    A.HorizontalFlip(p=0.5),
-    A.Affine(scale=(0.9, 1.1), rotate=(-10, 10), p=0.5),
-    A.RandomBrightnessContrast(p=0.5)
+    A.HorizontalFlip(p=0.5),  
+    A.MotionBlur(blur_range=(8, 12), p=1.0),
+    A.AtmosphericFog(density_range=(1.0, 2.5), depth_mode="linear", p=1.0),
+    A.CoarseDropout(max_holes=8, max_height=32, max_width=32, p=1.0),
 ]
 def load_yolo_labels(label_path):
     boxes, class_labels = [], []
@@ -14,7 +14,7 @@ def load_yolo_labels(label_path):
         for line in f:
             parts = line.strip().split()
             if len(parts) == 5:
-                class_labels.append(int(parts[0]))
+                class_labels.append(parts[0])
                 boxes.append([float(x) for x in parts[1:]])
     return boxes, class_labels
 

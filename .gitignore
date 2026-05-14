@@ -1,3 +1,37 @@
+# Students stuff
+archive.zip
+archive/
+animals/
+yolov7.pt
+scripts/python.exe
+scripts/pythonw.exe
+scripts/tensorboard.exe
+scripts/torchfrtrace.exe
+scripts/torchrun.exe
+scripts/tqdm.exe
+scripts/ttx.exe
+share/
+scripts/Activate.ps1
+scripts/activate
+scripts/activate.bat
+scripts/deactivate.bat
+scripts/f2py.exe
+scripts/fonttools.exe
+scripts/ipython.exe
+scripts/ipython3.exe
+scripts/isympy.exe
+scripts/markdown_py.exe
+scripts/normalizer.exe
+scripts/pip.exe
+scripts/pip3.10.exe
+scripts/pip3.exe
+scripts/pyftmerge.exe
+scripts/pyftsubset.exe
+scripts/pygmentize.exe
+scripts/numpy-config.exe
+scripts/sz_split.exe
+scripts/sz_wc.exe
+
 # Repo-specific GitIgnore ----------------------------------------------------------------------------------------------
 *.jpg
 *.jpeg
