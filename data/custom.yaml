@@ -1,0 +1,23 @@
+train: ./animals/images/train
+val: ./animals/images/val
+test: ./animals/images/test
+nc: 17
+names: [    
+    'Zebra',
+    'Lion',
+    'Leopard',
+    'Cheetah',
+    'Bear',
+    'Brown bear',
+    'Canary',
+    'Crocodile',
+    'Polar bear',
+    'Bull',
+    'Camel',
+    'Cattle',
+    'Sheep',
+    'Rhinoceros',
+    'Mule',
+    'Elephant',
+    'Fox'
+    ]
